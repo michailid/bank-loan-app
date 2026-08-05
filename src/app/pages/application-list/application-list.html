@@ -1,1 +1,199 @@
-<p>application-list works!</p>
+<!-- ══════════════ PAGE HEADER ══════════════ -->
+<div class="page-header">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
+    <div>
+      <h1>
+        <i class="bi bi-folder2-open text-dark"></i>
+        My Loan Applications
+      </h1>
+      <p>Track and manage all your loan applications</p>
+    </div>
+    <a href="#" class="btn btn-primary btn-new">
+      <i class="bi bi-plus-circle me-2"></i>New Application
+    </a>
+  </div>
+</div>
+
+<!-- ══════════════ MAIN CONTENT ══════════════ -->
+<div class="container py-4">
+  <!-- Stat Cards -->
+  <div class="row g-4 mb-4">
+    <div class="col-12 col-sm-6 col-xl-3">
+      <div class="stat-card stat-blue">
+        <div class="stat-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
+        <div>
+          <div class="stat-number">12</div>
+          <div class="stat-label">Total Applications</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-xl-3">
+      <div class="stat-card stat-orange">
+        <div class="stat-icon"><i class="bi bi-clock-fill"></i></div>
+        <div>
+          <div class="stat-number">5</div>
+          <div class="stat-label">Pending</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-xl-3">
+      <div class="stat-card stat-green">
+        <div class="stat-icon"><i class="bi bi-check-circle-fill"></i></div>
+        <div>
+          <div class="stat-number">6</div>
+          <div class="stat-label">Approved</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-xl-3">
+      <div class="stat-card stat-red">
+        <div class="stat-icon"><i class="bi bi-x-circle-fill"></i></div>
+        <div>
+          <div class="stat-number">1</div>
+          <div class="stat-label">Rejected</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Cards – Row 1 -->
+  <div class="row g-4 mb-4">
+    <!-- Card 1 – Amit Sharma (Pending / Salaried) -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="app-card">
+        <div class="ribbon ribbon-pending"><span>Salaried</span></div>
+        <div class="applicant-name">Amit Sharma</div>
+        <div class="applicant-id mb-3"><i class="bi bi-credit-card"></i> ABCDE1294F</div>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="badge badge-pending">Pending</span>
+        </div>
+        <hr class="card-divider m-0 mb-3" />
+        <div class="detail-row"><i class="bi bi-envelope-fill"></i> amit.sharma@example.com</div>
+        <div class="detail-row"><i class="bi bi-telephone-fill"></i> 9876543210</div>
+        <div class="detail-row"><i class="bi bi-person-fill"></i> Assigned to: sachinEmp</div>
+        <div class="detail-row"><i class="bi bi-calendar3"></i> Applied: Feb 24, 2025</div>
+        <hr class="card-divider" />
+        <div class="card-actions">
+          <a href="#" class="btn btn-view btn-sm"><i class="bi bi-eye me-1"></i>View Details</a>
+          <a href="#" class="btn btn-edit btn-sm"><i class="bi bi-pencil me-1"></i>Edit</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 – Priya Verma (Approved / Self-Employed) -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="app-card">
+        <div class="ribbon ribbon-approved"><span>Self-Employed</span></div>
+        <div class="applicant-name">Priya Verma</div>
+        <div class="applicant-id mb-3"><i class="bi bi-credit-card"></i> XYZAB9876C</div>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="badge badge-approved">Approved</span>
+        </div>
+        <hr class="card-divider m-0 mb-3" />
+        <div class="detail-row"><i class="bi bi-envelope-fill"></i> priya.verma@example.com</div>
+        <div class="detail-row"><i class="bi bi-telephone-fill"></i> 9876543211</div>
+        <div class="detail-row"><i class="bi bi-person-fill"></i> Assigned to: rahulEmp</div>
+        <div class="detail-row"><i class="bi bi-calendar3"></i> Applied: Feb 20, 2025</div>
+        <hr class="card-divider" />
+        <div class="card-actions">
+          <a href="#" class="btn btn-view btn-sm"><i class="bi bi-eye me-1"></i>View Details</a>
+          <a href="#" class="btn btn-edit btn-sm"><i class="bi bi-pencil me-1"></i>Edit</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 – Rajesh Kumar (Pending / Salaried) -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="app-card">
+        <div class="ribbon ribbon-pending"><span>Salaried</span></div>
+        <div class="applicant-name">Rajesh Kumar</div>
+        <div class="applicant-id mb-3"><i class="bi bi-credit-card"></i> PQRST5432D</div>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="badge badge-pending">Pending</span>
+        </div>
+        <hr class="card-divider m-0 mb-3" />
+        <div class="detail-row"><i class="bi bi-envelope-fill"></i> rajesh.kumar@example.com</div>
+        <div class="detail-row"><i class="bi bi-telephone-fill"></i> 9876543212</div>
+        <div class="detail-row"><i class="bi bi-person-fill"></i> Assigned to: anilEmp</div>
+        <div class="detail-row"><i class="bi bi-calendar3"></i> Applied: Feb 22, 2025</div>
+        <hr class="card-divider" />
+        <div class="card-actions">
+          <a href="#" class="btn btn-view btn-sm"><i class="bi bi-eye me-1"></i>View Details</a>
+          <a href="#" class="btn btn-edit btn-sm"><i class="bi bi-pencil me-1"></i>Edit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Cards – Row 2 -->
+  <div class="row g-4">
+    <!-- Card 4 – Sneha Patel (Approved / Business Owner) -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="app-card">
+        <div class="ribbon ribbon-approved"><span>Business Owner</span></div>
+        <div class="applicant-name">Sneha Patel</div>
+        <div class="applicant-id mb-3"><i class="bi bi-credit-card"></i> LMNOP6789E</div>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="badge badge-approved">Approved</span>
+        </div>
+        <hr class="card-divider m-0 mb-3" />
+        <div class="detail-row"><i class="bi bi-envelope-fill"></i> sneha.patel@example.com</div>
+        <div class="detail-row"><i class="bi bi-telephone-fill"></i> 9876543213</div>
+        <div class="detail-row"><i class="bi bi-person-fill"></i> Assigned to: vikasEmp</div>
+        <div class="detail-row"><i class="bi bi-calendar3"></i> Applied: Feb 18, 2025</div>
+        <hr class="card-divider" />
+        <div class="card-actions">
+          <a href="#" class="btn btn-view btn-sm"><i class="bi bi-eye me-1"></i>View Details</a>
+          <a href="#" class="btn btn-edit btn-sm"><i class="bi bi-pencil me-1"></i>Edit</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 – Vikram Singh (Rejected / Salaried) -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="app-card">
+        <div class="ribbon ribbon-rejected"><span>Salaried</span></div>
+        <div class="applicant-name">Vikram Singh</div>
+        <div class="applicant-id mb-3"><i class="bi bi-credit-card"></i> FGHIJ3456G</div>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="badge badge-rejected">Rejected</span>
+        </div>
+        <hr class="card-divider m-0 mb-3" />
+        <div class="detail-row"><i class="bi bi-envelope-fill"></i> vikram.singh@example.com</div>
+        <div class="detail-row"><i class="bi bi-telephone-fill"></i> 9876543214</div>
+        <div class="detail-row"><i class="bi bi-person-fill"></i> Assigned to: mohitEmp</div>
+        <div class="detail-row"><i class="bi bi-calendar3"></i> Applied: Feb 15, 2025</div>
+        <hr class="card-divider" />
+        <div class="card-actions">
+          <a href="#" class="btn btn-view btn-sm"><i class="bi bi-eye me-1"></i>View Details</a>
+          <a href="#" class="btn btn-edit btn-sm"><i class="bi bi-pencil me-1"></i>Edit</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 – Anita Desai (Approved / Self-Employed) -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="app-card">
+        <div class="ribbon ribbon-approved"><span>Self-Employed</span></div>
+        <div class="applicant-name">Anita Desai</div>
+        <div class="applicant-id mb-3"><i class="bi bi-credit-card"></i> UVWXY9012H</div>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="badge badge-approved">Approved</span>
+        </div>
+        <hr class="card-divider m-0 mb-3" />
+        <div class="detail-row"><i class="bi bi-envelope-fill"></i> anita.desai@example.com</div>
+        <div class="detail-row"><i class="bi bi-telephone-fill"></i> 9876543215</div>
+        <div class="detail-row"><i class="bi bi-person-fill"></i> Assigned to: priyaEmp</div>
+        <div class="detail-row"><i class="bi bi-calendar3"></i> Applied: Feb 12, 2025</div>
+        <hr class="card-divider" />
+        <div class="card-actions">
+          <a href="#" class="btn btn-view btn-sm"><i class="bi bi-eye me-1"></i>View Details</a>
+          <a href="#" class="btn btn-edit btn-sm"><i class="bi bi-pencil me-1"></i>Edit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="app-footer">&copy; 2026 LoanHub. All rights reserved.</footer>

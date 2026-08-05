@@ -1,3 +1,5 @@
+This project is based on the tutorial _Angular 21 Project 🚀 Bank Loan Application System | Complete Project_: https://www.youtube.com/watch?v=57kFLTlYpag
+
 # BankLoanApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.13.

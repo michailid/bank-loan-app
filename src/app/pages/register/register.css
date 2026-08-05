@@ -1,0 +1,187 @@
+:root {
+  --brand-green: #1f9d55;
+  --brand-green-dark: #17803f;
+  --panel-bg: #f5f6f7;
+  --blue-start: #2f8fd6;
+  --blue-end: #1565b0;
+  --text-dark: #1c2530;
+  --text-muted: #7a838d;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--text-dark);
+}
+
+.register-wrapper {
+  min-height: 100vh;
+}
+
+/* Left panel */
+.form-panel {
+  background-color: var(--panel-bg);
+  padding: 3rem 3.5rem;
+}
+
+.form-panel-inner {
+  width: 100%;
+  max-width: 420px;
+}
+
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-green);
+  font-size: 1.75rem;
+  margin: 0 auto 0.75rem;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 0.35rem;
+}
+
+.form-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.75rem;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 0.35rem;
+}
+
+.input-group-text {
+  background-color: #fff;
+  color: var(--brand-green);
+  border-right: none;
+}
+
+.form-control {
+  border-left: none;
+}
+
+.input-group .form-control:focus,
+.input-group:focus-within .input-group-text {
+  box-shadow: none;
+  border-color: #b9bfc5;
+}
+
+.form-control::placeholder {
+  color: #9aa1a8;
+  font-size: 0.9rem;
+}
+
+.terms-check label {
+  font-size: 0.85rem;
+  color: var(--text-dark);
+}
+
+.terms-check a {
+  color: #2f7de1;
+  text-decoration: none;
+}
+
+.btn-create-account {
+  background-color: var(--brand-green);
+  border-color: var(--brand-green);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.btn-create-account:hover {
+  background-color: var(--brand-green-dark);
+  border-color: var(--brand-green-dark);
+  color: #fff;
+}
+
+.login-link {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.login-link a {
+  color: #2f7de1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Right panel */
+.info-panel {
+  /* background: linear-gradient(160deg, var(--blue-start) 0%, var(--blue-end) 100%); */
+  background: #2f8fd6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.info-panel-inner {
+  max-width: 380px;
+}
+
+.shield-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-title {
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.feature-list i {
+  color: #6ee7b7;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 991.98px) {
+  .info-panel {
+    min-height: 320px;
+  }
+  .form-panel {
+    padding: 2.5rem 1.5rem;
+  }
+}

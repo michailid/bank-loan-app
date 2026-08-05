@@ -1,1 +1,275 @@
-<p>new-application works!</p>
+
+<!-- Main Content -->
+<div class="lh-page-bg py-4 py-lg-5">
+  <div class="container lh-container">
+    <!-- Header Banner -->
+    <div class="lh-form-header text-center text-white py-4 px-3 mb-0">
+      <h4 class="fw-bold mb-1 d-flex align-items-center justify-content-center gap-2">
+        <i class="bi bi-file-earmark-text"></i> Loan Application Form
+      </h4>
+      <p class="mb-0 lh-header-sub">Fill in your details to apply for a loan</p>
+    </div>
+
+    <!-- Form Card -->
+    <div class="lh-form-card px-3 px-md-4 px-lg-5 py-4">
+      <form>
+        <!-- Personal Information -->
+        <div class="lh-section mb-4">
+          <h6 class="lh-section-title d-flex align-items-center gap-2">
+            <i class="bi bi-person-fill lh-icon-blue"></i>
+            <span>Personal Information</span>
+          </h6>
+          <hr class="lh-divider mt-1 mb-3" />
+
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <label class="lh-label">Full Name <span class="text-danger">*</span></label>
+              <input type="text" class="form-control lh-input" placeholder="Enter your full name" />
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="lh-label">PAN Card Number <span class="text-danger">*</span></label>
+              <input
+                type="text"
+                class="form-control lh-input"
+                placeholder="ABCDE1234F"
+                value="ABCDE1234F"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="lh-label">Date of Birth <span class="text-danger">*</span></label>
+              <input type="date" class="form-control lh-input" placeholder="dd-mm-yyyy" />
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="lh-label">Email Address <span class="text-danger">*</span></label>
+              <input
+                type="email"
+                class="form-control lh-input"
+                placeholder="your.email@example.com"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="lh-label">Phone Number <span class="text-danger">*</span></label>
+              <input
+                type="tel"
+                class="form-control lh-input"
+                placeholder="9876543210"
+                value="9876543210"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="lh-label">Application Status</label>
+              <select class="form-select lh-input">
+                <option selected>Pending</option>
+                <option>Approved</option>
+                <option>Rejected</option>
+                <option>Under Review</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Address Details -->
+        <div class="lh-section mb-4">
+          <h6 class="lh-section-title d-flex align-items-center gap-2">
+            <i class="bi bi-geo-alt-fill lh-icon-blue"></i>
+            <span>Address Details</span>
+          </h6>
+          <hr class="lh-divider mt-1 mb-3" />
+
+          <div class="row g-3">
+            <div class="col-12">
+              <label class="lh-label">Street Address <span class="text-danger">*</span></label>
+              <textarea
+                class="form-control lh-input lh-textarea"
+                rows="2"
+                placeholder="Enter your complete address"
+              ></textarea>
+            </div>
+            <div class="col-12 col-md-4">
+              <label class="lh-label">City <span class="text-danger">*</span></label>
+              <input type="text" class="form-control lh-input" placeholder="City" />
+            </div>
+            <div class="col-12 col-md-4">
+              <label class="lh-label">State <span class="text-danger">*</span></label>
+              <input type="text" class="form-control lh-input" placeholder="State" />
+            </div>
+            <div class="col-12 col-md-4">
+              <label class="lh-label">ZIP Code <span class="text-danger">*</span></label>
+              <input
+                type="text"
+                class="form-control lh-input"
+                placeholder="123456"
+                value="123456"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Financial Information -->
+        <div class="lh-section mb-4">
+          <h6 class="lh-section-title d-flex align-items-center gap-2">
+            <i class="bi bi-briefcase-fill lh-icon-blue"></i>
+            <span>Financial Information</span>
+          </h6>
+          <hr class="lh-divider mt-1 mb-3" />
+
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <label class="lh-label"
+                >Annual Income (&#8377;) <span class="text-danger">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control lh-input"
+                placeholder="500000"
+                value="500000"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="lh-label">Employment Status <span class="text-danger">*</span></label>
+              <select class="form-select lh-input">
+                <option value="" selected disabled>Select Status</option>
+                <option>Salaried</option>
+                <option>Self-Employed</option>
+                <option>Business Owner</option>
+                <option>Unemployed</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="lh-label">Credit Score</label>
+              <input type="number" class="form-control lh-input" placeholder="750" value="750" />
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="lh-label">Assets</label>
+              <textarea
+                class="form-control lh-input lh-textarea"
+                rows="2"
+                placeholder="List your assets (property, vehicles, etc.)"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Loan Details -->
+        <div class="lh-section mb-4">
+          <h6 class="lh-section-title d-flex align-items-center gap-2">
+            <i class="bi bi-bank lh-icon-blue"></i>
+            <span>Loan Details</span>
+          </h6>
+          <hr class="lh-divider mt-1 mb-3" />
+
+          <!-- Loan #1 -->
+          <div class="lh-loan-card mb-3 p-3">
+            <h6 class="lh-loan-title d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-bank"></i> Loan #1
+            </h6>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="lh-label">Bank Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control lh-input" placeholder="Enter bank name" />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="lh-label"
+                  >Loan Amount (&#8377;) <span class="text-danger">*</span></label
+                >
+                <input
+                  type="number"
+                  class="form-control lh-input"
+                  placeholder="500000"
+                  value="500000"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="lh-label">EMI (&#8377;) <span class="text-danger">*</span></label>
+                <input
+                  type="number"
+                  class="form-control lh-input"
+                  placeholder="10000"
+                  value="10000"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Loan #2 -->
+          <div class="lh-loan-card mb-3 p-3">
+            <h6 class="lh-loan-title d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-bank"></i> Loan #2
+            </h6>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="lh-label">Bank Name</label>
+                <input type="text" class="form-control lh-input" placeholder="Enter bank name" />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="lh-label">Loan Amount (&#8377;)</label>
+                <input
+                  type="number"
+                  class="form-control lh-input"
+                  placeholder="500000"
+                  value="500000"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="lh-label">EMI (&#8377;)</label>
+                <input
+                  type="number"
+                  class="form-control lh-input"
+                  placeholder="10000"
+                  value="10000"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Loan #3 -->
+          <div class="lh-loan-card p-3">
+            <h6 class="lh-loan-title d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-bank"></i> Loan #3
+            </h6>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="lh-label">Bank Name</label>
+                <input type="text" class="form-control lh-input" placeholder="Enter bank name" />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="lh-label">Loan Amount (&#8377;)</label>
+                <input
+                  type="number"
+                  class="form-control lh-input"
+                  placeholder="500000"
+                  value="500000"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="lh-label">EMI (&#8377;)</label>
+                <input
+                  type="number"
+                  class="form-control lh-input"
+                  placeholder="10000"
+                  value="10000"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex flex-wrap gap-3 justify-content-center pt-2 pb-2">
+          <button type="submit" class="btn lh-btn-submit px-4 d-flex align-items-center gap-2">
+            <i class="bi bi-send-fill"></i> Submit Application
+          </button>
+          <button type="reset" class="btn lh-btn-reset px-4 d-flex align-items-center gap-2">
+            <i class="bi bi-arrow-clockwise"></i> Reset Form
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- /Form Card -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="lh-footer text-center py-3">
+  <small>&copy; 2026 LoanHub. All rights reserved.</small>
+</footer>
