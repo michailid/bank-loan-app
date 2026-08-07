@@ -1,4 +1,4 @@
-:root {
+:host {
   --brand-green: #1f9d55;
   --brand-green-dark: #17803f;
   --panel-bg: #f5f6f7;
@@ -111,22 +111,24 @@ body {
   color: #fff;
 }
 
-.login-link {
+.login-link,
+.register-link {
   text-align: center;
   font-size: 0.9rem;
   margin-top: 1rem;
 }
 
-.login-link a {
+.login-link a,
+.register-link a {
   color: #2f7de1;
   text-decoration: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* Right panel */
 .info-panel {
-  /* background: linear-gradient(160deg, var(--blue-start) 0%, var(--blue-end) 100%); */
-  background: #2f8fd6;
+  background: linear-gradient(160deg, var(--blue-start) 0%, var(--blue-end) 100%);
   color: #fff;
   display: flex;
   align-items: center;
