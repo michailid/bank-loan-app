@@ -89,7 +89,7 @@ export class NewApplication {
 
   onSave() {
     debugger;
-    // const formValue = this.loanForm.value; // does not include disabled fields => result = false
+    // const formValue = this.loanForm.value; // silently drops disabled fields => res.result = false
     const formValue = this.loanForm.getRawValue();
 
     formValue.customerId = this.loggedUser.userId;

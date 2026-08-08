@@ -11,4 +11,14 @@ export class Loan {
   onSaveLoanApplication(obj: LoanApplication) {
     return this.http.post('https://api.freeprojectapi.com/api/BankLoan/AddNewApplication', obj);
   }
+
+  getAllApplications() {
+    return this.http.get('https://api.freeprojectapi.com/api/BankLoan/GetAllApplications');
+  }
+
+  getMyApplications(id: number) {
+    return this.http.get(
+      'https://api.freeprojectapi.com/api/BankLoan/GetMyApplications?customerId=' + id,
+    );
+  }
 }

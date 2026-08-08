@@ -26,3 +26,15 @@ export interface LoanApplication {
   loans: Loan[];
   customerId: number;
 }
+
+export interface ApplicantSummary {
+  applicantID: number;
+  dateApplied: string; // ISO 8601 date string
+  applicationStatus: string;
+  fullName: string;
+  email: string;
+  employmentStatus: string;
+  customerPhone: string;
+  assignedToBankEmployee: string;
+  panCard: string;
+}
