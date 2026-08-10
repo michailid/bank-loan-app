@@ -16,7 +16,7 @@ export class ApplicationList implements OnInit {
   loanList: WritableSignal<ApplicantSummary[]> = signal<ApplicantSummary[]>([]);
 
   // 'all' or 'assigned'
-  viewFilter: 'all' | 'assigned' = 'assigned';
+  viewFilter: 'all' | 'assigned' = 'all';
 
   setViewFilter(filter: 'all' | 'assigned') {
     this.viewFilter = filter;
@@ -26,9 +26,7 @@ export class ApplicationList implements OnInit {
   loadApplications() {
     if (this.viewFilter === 'all') {
       // fetch/show all applications
-      alert('all applications');
     } else {
-      alert('assigned to me');
       // fetch/show only applications assigned to loggedUser
       this.loanList.set(
         this.loanList().filter((loan) => {
