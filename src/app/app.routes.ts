@@ -23,6 +23,7 @@ export const routes: Routes = [
   {
     path: 'application-list',
     component: ApplicationList,
+    canActivate: [authGuard],
   },
   {
     path: 'register',
